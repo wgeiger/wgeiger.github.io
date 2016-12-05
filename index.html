@@ -1,7 +1,13 @@
 <html>
-<body> Conglaturations <span id='appInt'><script>var parameters = location.search.substring(1).split("&");
+<body> Conglaturations your oauth configuration is successfull.<br/><br/>
+State: <span id='state'><script>var parameters = location.search.substring(1).split("&");
 
     var temp = parameters[0].split("=");
     l = unescape(temp[1]);
-    document.getElementById("appInt").innerHTML = l;</script></span> is configured.</body>
+    document.getElementById("state").innerHTML = l;</script></span><br/>
+Code: <span id='code'><script>var parameters = location.search.substring(1).split("&");
+
+    var temp = parameters[2].split("=");
+    l = unescape(temp[1]);
+    document.getElementById("state").innerHTML = l;</script></span>
 </html>
